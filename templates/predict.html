@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+
+    <style>
+       body {
+			background-image: url('/static/image1.jpg');
+			background-size: 1536px 795px;
+			background-repeat: no-repeat;
+			font-family: "Time New Roman", Time,Serif;
+		}
+		.card{
+		  background-color:#f0f0f0;
+		  border-radius: 20px;
+		  opacity: 0.85;
+
+		}
+		.card-header{
+		  background-color: #3b3b3b;
+		  color: #fff;
+		}
+		.form-control{
+		  border-radius: 5px;
+		  background-color: #e9e9e9;
+		  border: none;
+		}
+		.btn-primary{
+		  background-color: #3b3b3b;
+		  border-color: #3b3b3b;
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="card shadow-lg mt-5 mb-5">
+                <div class="card-header" style="text-align: center;">
+                    <h1 class="text-center" style="color:white;">HOUSE PRICE PREDICTION</h1>
+                    <a href="{{url_for('index')}}"><span class="glyphicon glyphicon-home"></span></a>
+                </div>
+                <div class="card-body">
+                    <div class="col-md-12" style="text-align: center;">
+                        <br>
+                        <h1>Predicted Price:  <span><strong>{{ result }}</strong></span></h1>
+                    </div>
+                    <div class="details-container">
+                        <h2><strong>Details:</strong> </h2>
+                        <strong>Location:</strong> {{ request.form['sLocation'] }}<br>
+                        <strong>Bathrooms:</strong> {{ request.form['uiBathrooms'] }}<br>
+                        <strong>BHK:</strong> {{ request.form['uiBHK'] }}<br>
+                        <strong>Square Feet:</strong> {{ request.form['Squareft'] }}<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
