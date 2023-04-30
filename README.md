@@ -3,7 +3,7 @@ This project predicts house prices based on the location, number of bedrooms, ba
 			
 # Demo of project
 
-##Home Page:
+## Home Page:
 ![House Price Prediction - Google Chrome 30-04-2023 18_37_42](https://user-images.githubusercontent.com/105841271/235354585-1bf2fbb2-9aa3-4de2-9b99-85e9351a4305.png)
 
 ## Result Page:
